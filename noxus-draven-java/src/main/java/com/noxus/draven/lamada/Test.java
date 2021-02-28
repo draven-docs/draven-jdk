@@ -1,4 +1,4 @@
-package noxus.draven.lamada;
+package com.noxus.draven.lamada;
 
 /**
  * 〈功能概述〉<br>
@@ -23,7 +23,7 @@ public class Test {
         });
     }
 
-    private static void method(Cook cook) {
+    private static void method(noxus.draven.lamada.Cook cook) {
         cook.makeFood();
     }
 }

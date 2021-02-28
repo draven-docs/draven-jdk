@@ -1,4 +1,4 @@
-package noxus.draven.lamada;
+package com.noxus.draven.lamada;
 
 /**
  * 〈功能概述〉<br>
@@ -8,7 +8,7 @@ package noxus.draven.lamada;
  * @author: draven
  * @date: 2020/7/1 09:37
  */
-public class CookUserFirst implements Cook {
+public class CookUserFirst implements noxus.draven.lamada.Cook {
 
 
     @Override

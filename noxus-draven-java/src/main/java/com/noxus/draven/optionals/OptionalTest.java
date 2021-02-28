@@ -1,7 +1,8 @@
 package com.noxus.draven.optionals;
 
-import org.junit.Before;
-import org.junit.Test;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
@@ -16,7 +17,7 @@ public class OptionalTest {
 
     User user = null;
 
-    @Before
+    @BeforeEach
     public void getuser() {
         final User user = new User();
         user.setId("2234");
