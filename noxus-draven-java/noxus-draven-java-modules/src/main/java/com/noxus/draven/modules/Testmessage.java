@@ -11,6 +11,7 @@ package com.noxus.draven.modules;
 public class Testmessage {
 
     public static void main(String[] args) {
+        System.out.println("Hello World!");
         /*x.Ext.init(this.getApplication());
 
         RequestParams params = new RequestParams(Constants.url);

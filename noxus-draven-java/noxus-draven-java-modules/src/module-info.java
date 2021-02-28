@@ -1,2 +1,0 @@
-module noxus-draven-lamda {
-}
