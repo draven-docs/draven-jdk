@@ -8,58 +8,76 @@
     <artifactId>noxus-draven-java</artifactId>
     <packaging>pom</packaging>
     <version>Draven1.0</version>
-    <dependencies>
-        <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-launcher</artifactId>
-            <version>1.7.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.7.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.vintage</groupId>
-            <artifactId>junit-vintage-engine</artifactId>
-            <version>5.7.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.7.1</version>
-            <scope>compile</scope>
-        </dependency>
-        <!--<dependency>
-          <groupId>org.testng</groupId>
-          <artifactId>testng</artifactId>
-          <version>RELEASE</version>
-          <scope>compile</scope>
-      </dependency>-->
-    </dependencies>
+    <modules>
+        <module>noxus-draven-java-lamada</module>
+        <module>noxus-draven-java-modules</module>
+        <module>noxus-draven-java-locvar</module>
+        <module>naxus-draven-textblock</module>
+    </modules>
 
+    <properties>
+        <!--<maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>-->
+        <junit5.version>5.7.1</junit5.version>
+        <junit-platform.version>1.7.1</junit-platform.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.junit.platform</groupId>
+                <artifactId>junit-platform-launcher</artifactId>
+                <version>${junit-platform.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${junit5.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.vintage</groupId>
+                <artifactId>junit-vintage-engine</artifactId>
+                <version>${junit5.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${junit5.version}</version>
+                <scope>compile</scope>
+            </dependency>
+
+            <!--<dependency>
+              <groupId>org.testng</groupId>
+              <artifactId>testng</artifactId>
+              <version>RELEASE</version>
+              <scope>compile</scope>
+          </dependency>-->
+        </dependencies>
+    </dependencyManagement>
+    <dependencies>
+    </dependencies>
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>15</source>
-                    <target>15</target>
-                </configuration>
-            </plugin>
+            <!--    <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>15</source>
+                        <target>15</target>
+                    </configuration>
+                </plugin>-->
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
-                <configuration>
+                <!--<configuration>
                     <testSourceDirectory>src/test/java/</testSourceDirectory>
                     <testClassesDirectory>${project.build.directory}/test-classes</testClassesDirectory>
-                </configuration>
+                </configuration>-->
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
