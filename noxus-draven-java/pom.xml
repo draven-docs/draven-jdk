@@ -13,7 +13,7 @@
         <module>noxus-draven-java-lamada</module>
         <module>noxus-draven-java-modules</module>
         <module>noxus-draven-java-locvar</module>
-        <module>naxus-draven-textblock</module>
+        <module>naxus-draven-java-textblock</module>
     </modules>
 
     <properties>

@@ -1,7 +1,7 @@
 package com.noxus.draven.spi.service.impl;
 
 import com.noxus.draven.spi.service.Robot;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.ServiceLoader;
 
